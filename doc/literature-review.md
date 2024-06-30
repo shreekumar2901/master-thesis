@@ -51,6 +51,10 @@ Gap:
 
 ## Indoor Multiperson Detection and Recognition Through Footsteps: A Deep Learning Approach With Acoustic Signal Analysis
 
+Year - 2024
+Person - 18
+Can recognize - 3 person
+
 Trigger faking by ambient interference, a signal activity detection with a feature control
 mechanism, which includes sound activity detection and noise sample filtering based on dynamic time warping (DTW).
 
@@ -58,12 +62,22 @@ Spectral subtraction is also used. Not clearly mentioned whats the purpose.
 
 Note: Related work is good.
 
-**Feature**: wavelet transform
+**Pre-Processing**: 
+ - *Volume Activity Detection* works well for extracting active signal frame from noisy audio signal. 
+ - Spectral Subtraction
+ - DTW to differentiate featured data and noise and discard noisy frames.
 
-**Model and Prediction**: ResNet
+Note: Employ VAD and spectral subtraction from this paper. Use it for overlapping window in your thesis.
+
+**Feature**: Discrete Wavelet Transform
+
+**Model and Prediction**: ResNet i.e a MulModel
+
+Adam optimizer used.
+
+SYM8 wavelet good performance.
 
 Gap:
-- Only three individuals. Not enough.
 
 
 
